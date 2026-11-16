@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Монтаж и визуальная упаковка</title>
+    <meta name="description" content="Видеомонтаж и визуальный продакшн для брендов, коммерции и экспертов. Удержание внимания и эстетика.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="nav__logo">PORTFOLIO</a>
+            <div class="nav__links">
+                <a href="#works" class="nav__link">Работы</a>
+                <a href="#results" class="nav__link">Кейсы</a>
+                <a href="#why-me" class="nav__link">Подход</a>
+                <a href="#contact" class="nav__link nav__link--cta">Связаться</a>
+            </div>
+            <button class="nav__burger" id="nav-burger" aria-label="Открыть меню">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu__links">
+            <a href="#works" class="mobile-menu__link">Работы</a>
+            <a href="#results" class="mobile-menu__link">Кейсы</a>
+            <a href="#why-me" class="mobile-menu__link">Подход</a>
+            <a href="#contact" class="mobile-menu__link mobile-menu__link--cta">Связаться</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__glow"></div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge"><span class="hero__badge-dot"></span>Открыт к новым проектам</div>
+                <h1 class="hero__title">Монтаж видео,<br><span class="hero__title-dim">которые удерживают</span><br>внимание</h1>
+                <p class="hero__subtitle">Визуальная упаковка и ритмичный монтаж для брендов, коммерции и экспертов. Чистая эстетика без лишнего шума.</p>
+                <div class="hero__actions">
+                    <a href="https://t.me/YOUR_USERNAME" target="_blank" rel="noopener" class="btn btn--primary" id="hero-cta">
+                        Обсудить проект
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#works" class="btn btn--ghost" id="hero-works">Смотреть работы</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll"><div class="hero__scroll-line"></div></div>
+    </section>
+
+    <!-- Works -->
+    <section class="works" id="works">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Портфолио</span>
+                <h2 class="section-title">Избранные работы</h2>
+                <p class="section-subtitle">Нажми на превью, чтобы включить звук и посмотреть ролик</p>
+            </div>
+            <div class="works__tabs" data-animate>
+                <button class="works__tab active" data-target="vertical">Вертикальные (9:16)</button>
+                <button class="works__tab" data-target="horizontal">Горизонтальные (16:9)</button>
+            </div>
+
+            <!-- Vertical Grid -->
+            <div class="works__grid works__grid--vertical active" id="vertical-works">
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap">
+                        <video src="assets/work1.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="currentColor"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap">
+                        <video src="assets/work2.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="currentColor"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap">
+                        <video src="assets/work3.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="currentColor"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal Grid -->
+            <div class="works__grid works__grid--horizontal" id="horizontal-works" style="display: none;">
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap works__video-wrap--horizontal">
+                        <video src="assets/horizontal1.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="currentColor"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__item" data-animate>
+                    <div class="works__video-wrap works__video-wrap--horizontal">
+                        <video src="assets/horizontal2.mp4" playsinline muted loop preload="metadata"></video>
+                        <div class="works__play-overlay">
+                            <div class="works__play-btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 5V19L19 12L8 5Z" fill="currentColor"/></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases -->
+    <section class="cases" id="results">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Кейсы</span>
+                <h2 class="section-title">Результат, а не просто склейки</h2>
+                <p class="section-subtitle">Проекты с фокусом на удержание, визуал и конверсию</p>
+            </div>
+
+            <div class="cases__list">
+                <!-- Case 1 -->
+                <div class="case" data-animate>
+                    <div class="case__header">
+                        <div class="case__header-left">
+                            <span class="case__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </span>
+                            <div>
+                                <h3 class="case__name">Название проекта / Бренда 1</h3>
+                                <span class="case__subs">Ниша: Коммерция / Недвижимость</span>
+                            </div>
+                        </div>
+                        <div class="case__stat-badge">
+                            <span class="case__stat-value">100K+</span>
+                            <span class="case__stat-label">просмотров</span>
+                        </div>
+                    </div>
+                    <div class="case__content">
+                        <div class="case__block">
+                            <span class="case__label">Задача</span>
+                            <p class="case__text">Упаковать продукт в премиальную визуальную подачу и удержать внимание с первых 2 секунд.</p>
+                        </div>
+                        <div class="case__divider"></div>
+                        <div class="case__block">
+                            <span class="case__label case__label--result">Результат</span>
+                            <p class="case__text">Выстроен единый визуальный стиль, чистая графика и саунд-дизайн, что повысило досматриваемость и вовлечение.</p>
+                        </div>
+                    </div>
+                    <div class="case__links">
+                        <a href="#" target="_blank" rel="noopener" class="case__link-btn">Смотреть ролик <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case" data-animate>
+                    <div class="case__header">
+                        <div class="case__header-left">
+                            <span class="case__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                            </span>
+                            <div>
+                                <h3 class="case__name">Название проекта 2</h3>
+                                <span class="case__subs">Формат: Shorts / Reels / Подкасты</span>
+                            </div>
+                        </div>
+                        <div class="case__stat-badge">
+                            <span class="case__stat-value">Высокое</span>
+                            <span class="case__stat-label">удержание</span>
+                        </div>
+                    </div>
+                    <div class="case__content">
+                        <div class="case__block">
+                            <span class="case__label">Задача</span>
+                            <p class="case__text">Найти сильные смысловые хуки из длинного материала и собрать динамичные вертикальные ролики.</p>
+                        </div>
+                        <div class="case__divider"></div>
+                        <div class="case__block">
+                            <span class="case__label case__label--result">Результат</span>
+                            <p class="case__text">Точечная работа с ритмом, акцентами и типографикой без перегруза кадра.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Me -->
+    <section class="why-me" id="why-me">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-label">Подход</span>
+                <h2 class="section-title">Принципы работы</h2>
+                <p class="section-subtitle">Фокус на эстетике, ритме и бизнес-задаче каждого видео</p>
+            </div>
+            <div class="why-me__grid">
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">01</div>
+                    <h3 class="why-me__card-title">Чистый визуал</h3>
+                    <p class="why-me__card-text">Минималистичная графика и аккуратная типографика в духе Apple — без дешёвой «каши» из эффектов.</p>
+                </div>
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">02</div>
+                    <h3 class="why-me__card-title">Ритм и саунд-дизайн</h3>
+                    <p class="why-me__card-text">Каждый переход и акцент подкреплён звуком и темпом, чтобы зритель не пролистывал ролик.</p>
+                </div>
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">03</div>
+                    <h3 class="why-me__card-title">Чёткие дедлайны</h3>
+                    <p class="why-me__card-text">Прозрачный процесс работы и сдача материала точно в оговорённые сроки.</p>
+                </div>
+                <div class="why-me__card" data-animate>
+                    <div class="why-me__card-number">04</div>
+                    <h3 class="why-me__card-title">Под задачу бизнеса</h3>
+                    <p class="why-me__card-text">Адаптирую подачу под нишу: коммерция, предметка, недвижимость или экспертный блог.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__content" data-animate>
+                <span class="section-label">Контакт</span>
+                <h2 class="section-title">Обсудить проект</h2>
+                <p class="section-subtitle">Напишите в Telegram — разберём вашу задачу и подберём формат подачи</p>
+                <a href="https://t.me/YOUR_USERNAME" target="_blank" rel="noopener" class="contact__tg-btn" id="contact-telegram">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Написать в Telegram
+                </a>
+                <p class="contact__handle">@YOUR_USERNAME</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <span class="footer__copy">© 2026 Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
